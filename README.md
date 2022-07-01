@@ -1,5 +1,5 @@
 
-# Context
+# Context-React
 
 Context, prop’ları her seviyede manuel olarak geçmek zorunda kalmadan bileşen ağacı üzerinden veri iletmenin bir yolunu sağlar.
 
