@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { UserContext } from "./context/UserContext";
 import User from "./User";
 
-function UserList({ users }) {
+function UserList() {
   //console.log("USERLIST.JS PROPS::", changeColor, users);
-  const contextData = useContext(UserContext);
-  console.log("USER-LIST-CONTEXT-DATA::",contextData);
+  const {users} = useContext(UserContext);
+  //console.log("USER-LIST-CONTEXT-DATA::",users);
 
   return (
     <div>

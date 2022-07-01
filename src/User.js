@@ -4,7 +4,7 @@ import { UserContext } from "./context/UserContext";
 function User({ user }) {
   //console.log("USER.JS PROPS::",user,changeColor)
 
-  const chngColor = useContext(UserContext);
+  const {changeColor} = useContext(UserContext);
 
   //console.log("CONTEXT DATA::",changeColor)
 
@@ -23,7 +23,7 @@ function User({ user }) {
       New Color:
       <input
         value={user.color}
-        onChange={(e) => chngColor(user.id, e.target.value)}
+        onChange={(e) => changeColor(user.id, e.target.value)}
       />
     </div>
   );
