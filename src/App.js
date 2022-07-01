@@ -39,10 +39,10 @@ function App() {
   };
 
   return (
-    <UserContext.Provider value={changeColor} >
+    <UserContext.Provider value={{changeColor,users}} >
       <div className="App">
         <h1>Welcome</h1>
-        <UserList users={users} changeColor={changeColor} />
+        <UserList/>
       </div>
     </UserContext.Provider>
   );
